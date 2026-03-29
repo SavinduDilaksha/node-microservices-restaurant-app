@@ -1,30 +1,34 @@
-# Logs
-logs
-*.log
+# ─── Node.js Dependencies ─────────────────────────────────────────────────────
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
 
-# Dependency directories
-node_modules/
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# dotenv environment variables file
+# ─── Environment Variables (NEVER commit secrets) ─────────────────────────────
 .env
-.env.test
 .env.local
+.env.development
+.env.production
 
-# OS metadata
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ─── OS Files ─────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
-Desktop.ini
+desktop.ini
 
-# Build output
+# ─── Editor / IDE ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ─── Coverage & Build ─────────────────────────────────────────────────────────
+coverage/
 dist/
 build/
-coverage/
